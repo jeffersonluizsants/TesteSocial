@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Teste Social</title>
+</head>
+ <header class="bg-zinc-400 shadow-md p-4 justify-between items-center">
+    <h1 class="text-2xl font-bold text-center">Bem-vindo ao Teste Social</h1>
+    <nav class="flex justify-center space-x-4">
+        <a href="index.html" class="text-white-700 hover:text-white-900">Início</a>
+        <button onclick="anterior()" class="text-white-700 hover:text-white-900">Pergunta Anterior</button>
+            
+        <script>
+            function anterior() {
+                window.location.href = "QuartaPergunta.html";
+            }
+        </script>
+    </nav>
+  </header>
+
+<body class="bg-gray-100 text-gray-900 grid">
+    <div> 
+        <h1 class="text-2xl font-bold mb-4"> 1- Como você lida com desafios no trabalho ou estudo?</h1>
+        <form>
+            <label class="block mb-2">
+                <input type="radio" name="desafio" value="A" class="mr-2"> A - Gosto de resolver sozinho e pensar em soluções criativas.
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="desafio" value="B" class="mr-2">B - Prefiro seguir um método já testado.
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="desafio" value="C" class="mr-2">C - Peço ajuda e discuto com outras pessoas.
+            </label>
+            <label class="block mb-2">
+                <input type="radio" name="desafio" value="D" class="mr-2">D - Analiso todas as possibilidades antes de decidir.
+        </form>
+    </div>
+</html>
